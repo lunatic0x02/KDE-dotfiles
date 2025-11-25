@@ -1,0 +1,19 @@
+[General]
+count=1
+rules=ebabe60c-d6e8-4796-8c7d-88413ac926cd
+
+[ebabe60c-d6e8-4796-8c7d-88413ac926cd]
+Description=Discord Transparency
+opacityactive=98
+opacityactiverule=2
+opacityinactive=98
+opacityinactiverule=2
+types=1
+wmclass=discord
+wmclassmatch=1
+
+[f8b42857-631f-4d54-8d8d-e29854f6f463]
+opacityactive=80
+opacityactiverule=2
+opacityinactive=80
+opacityinactiverule=2
