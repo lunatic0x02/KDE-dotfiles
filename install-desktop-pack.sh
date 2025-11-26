@@ -1,9 +1,25 @@
 #!/bin/bash
 
 set -e
+$STARTING_DIR=$(pwd)
 
 echo "# Installing Required Desktop Packages"
 sudo dnf install -y git stow kvantum
+
+echo "# Stowing Desktop Theme"
+$THEME="milkyway"
+stow -R "$THEME"
+
+echo "# Set Kvantum Theme"
+kvantummanager --set $(cat ~/.config/Kvantum/kvantum.kvconfig | grep theme | sed 's/theme=//')
+
+echo "# Installing Plasmoids"
+$PLASMOIDS_DIR="$STARTING_DIR/milkyway/.local/share/plasma/plasmoids/"
+for widget in "$PLASMOIDS_DIR"/*; do
+    [[ $(basename "$widget") != "org.kde.plasma.*" ]] || continue
+    echo "Installing plasmoid: $(basename "$widget")"
+    kpackagetool6 --install "$widget"
+done
 
 echo "# Building Better Blur"
 cd ~
@@ -19,24 +35,9 @@ if [ ! -d "kwin-effects-forceblur" ]; then
     sudo make install
 fi
 
-echo "# Stowing Desktop Theme"
-$THEME="milkyway"
-stow -R "$THEME"
-
-echo "# Set Kvantum Theme"
-kvantummanager --set $(cat ~/.config/Kvantum/kvantum.kvconfig | grep theme | sed 's/theme=//')
-
-echo "=== Restarting Plasma Shell ==="
+echo "# Restarting Plasma Shell"
 kquitapp5 plasmashell || true
 plasmashell --replace &
-
-echo "# Installing Plasmoids"
-$PLASMOIDS_DIR="$HOME/dotfiles/milkyway/.local/share/plasma/plasmoids/"
-for widget in "$PLASMOIDS_DIR"/*; do
-    [[ $(basename "$widget") != "org.kde.plasma.*" ]] || continue
-    echo "Installing plasmoid: $(basename "$widget")"
-    kpackagetool6 --install "$widget"
-done
 
 echo "# Installation Finished!"
 echo "Check if desktop theme is properly configured."
