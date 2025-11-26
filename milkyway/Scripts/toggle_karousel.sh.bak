@@ -1,0 +1,30 @@
+#!/bin/bash
+
+CONFIG="$HOME/.config/kwinrc"
+KEY="karouselEnabled"
+
+# Read current state (true/false)
+STATE=$(grep "^$KEY=" "$CONFIG" | cut -d= -f2)
+
+if [[ "$STATE" == "true" ]]; then
+    echo "Disabling Karousel..."
+    kwriteconfig6 --file kwinrc --group Plugins --key "$KEY" false
+else
+    echo "Enabling Karousel..."
+    kwriteconfig6 --file kwinrc --group Plugins --key "$KEY" true
+fi
+
+# Apply changes
+echo "Reloading..."
+
+if pgrep -x "kwin_wayland" >/dev/null; then
+    # Wayland session
+    qdbus6 org.kde.KWin /KWin reconfigure
+    kwin_wayland --replace & disown
+else
+    # X11 session
+    qdbus6 org.kde.KWin /KWin reconfigure
+    kwin_x11 --replace & disown
+fi
+
+echo "Karousel Toggled."
