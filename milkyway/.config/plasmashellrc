@@ -5,7 +5,7 @@ PreloadWeight=18
 alignment=132
 floating=1
 floatingApplets=1
-panelLengthMode=1
+panelLengthMode=0
 panelOpacity=2
 panelVisibility=0
 
