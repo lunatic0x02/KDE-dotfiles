@@ -390,3 +390,6 @@ toggle do not disturb=none,,Toggle do not disturb
 
 [services][net.local.toggle_karousel.sh.desktop]
 _launch=Meta+Shift+T
+
+[services][net.local.toggle_karousel_topgap.sh.desktop]
+_launch=Meta+Shift+U
