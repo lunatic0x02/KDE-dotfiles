@@ -1,6 +1,3 @@
-[PlasmaTransientsConfig]
-PreloadWeight=18
-
 [PlasmaViews][Panel 2]
 alignment=132
 floating=1
