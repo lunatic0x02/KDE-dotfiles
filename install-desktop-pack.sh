@@ -50,6 +50,11 @@ cmake .. -DCMAKE_INSTALL_PREFIX=/usr
 make -j"$(nproc)"
 sudo make install
 
+# Building Shader Wallpaper
+git clone https://github.com/y4my4my4m/kde-shader-wallpaper.git
+rm -rf ~/.local/share/plasma/wallpapers/online.knowmad.shaderwallpaper/
+kpackagetool6 -t Plasma/Wallpaper -i kde-shader-wallpaper/package
+
 # Finishing
 echo "# Restarting Plasma Shell (Plasma 6)"
 kquitapp6 plasmashell || true
