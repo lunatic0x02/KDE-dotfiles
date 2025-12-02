@@ -15,14 +15,14 @@ NoiseStrength=0
 
 [Effect-blurplus]
 BlurStrength=3
-Brightness=1.2000000000000002
+Brightness=1.2
 NoiseStrength=1
 RefractionEdgeSize=7
 RefractionNormalPow=4
 RefractionRGBFringing=2
 RefractionStrength=17
-Saturation=1.2000000000000002
-WindowClasses=
+Saturation=1.2
+WindowClasses=discord\nvesktop
 
 [Effect-kwin4_effect_geometry_change]
 Duration=111
@@ -45,6 +45,7 @@ Drag=70
 blurEnabled=false
 cubeEnabled=true
 forceblurEnabled=true
+gapsOuterTop=true
 karouselEnabled=true
 krohnkiteEnabled=false
 kwin4_effect_geometry_changeEnabled=true
@@ -56,7 +57,7 @@ wobblywindowsEnabled=true
 
 [Script-karousel]
 gapsOuterBottom=20
-gapsOuterTop=20
+gapsOuterTop=120
 presetWidths=25%, 30%,40%, 50%, 60%,70%, 75%, 80%, 88%, 100%
 scrollingCentered=true
 scrollingLazy=false
@@ -80,7 +81,13 @@ padding=4
 [Tiling][0bd72ce2-826e-494e-98fa-a44378eae95b][06fd0cdd-4ca0-4b95-8db8-4b3c42b77062]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][0bd72ce2-826e-494e-98fa-a44378eae95b][d0eab357-08e7-4c6e-a114-a2f1be8bb893]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][1390db81-5e13-4edf-b217-075696d0cad5][06fd0cdd-4ca0-4b95-8db8-4b3c42b77062]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][1390db81-5e13-4edf-b217-075696d0cad5][d0eab357-08e7-4c6e-a114-a2f1be8bb893]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][5145f66e-00aa-4eba-9880-5d5e01f875ed][06fd0cdd-4ca0-4b95-8db8-4b3c42b77062]
@@ -92,11 +99,23 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][845543e1-6ac0-4628-856e-ac1199b672c1][06fd0cdd-4ca0-4b95-8db8-4b3c42b77062]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][845543e1-6ac0-4628-856e-ac1199b672c1][d0eab357-08e7-4c6e-a114-a2f1be8bb893]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][986b4d63-7bc0-44a0-9fe7-827b2f229e7c][06fd0cdd-4ca0-4b95-8db8-4b3c42b77062]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][986b4d63-7bc0-44a0-9fe7-827b2f229e7c][d0eab357-08e7-4c6e-a114-a2f1be8bb893]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][cccb3b24-d837-42ec-8b41-f6a4c8e02465][06fd0cdd-4ca0-4b95-8db8-4b3c42b77062]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][cccb3b24-d837-42ec-8b41-f6a4c8e02465][d0eab357-08e7-4c6e-a114-a2f1be8bb893]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Wayland]
+EnablePrimarySelection=false
 
 [Xwayland]
 Scale=1
