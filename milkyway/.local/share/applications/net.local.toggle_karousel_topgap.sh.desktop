@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/home/Lunatic/dotfiles/milkyway/Scripts/toggle_karousel_topgap.sh
+Name=toggle_karousel_topgap
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

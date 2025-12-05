@@ -57,7 +57,7 @@ wobblywindowsEnabled=true
 
 [Script-karousel]
 gapsOuterBottom=20
-gapsOuterTop=120
+gapsOuterTop=20
 presetWidths=25%, 30%,40%, 50%, 60%,70%, 75%, 80%, 88%, 100%
 scrollingCentered=true
 scrollingLazy=false

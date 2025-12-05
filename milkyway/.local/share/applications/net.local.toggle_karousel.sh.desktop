@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=/home/Lunatic/Scripts/toggle_karousel.sh
+GenericName[en_US]=
+GenericName=
+MimeType=
+Name[en_US]=toggle_karousel
+Name=toggle_karousel
+NoDisplay=true
+Path=
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

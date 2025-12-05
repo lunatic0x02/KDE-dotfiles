@@ -3,6 +3,40 @@
 set -e
 STARTING_DIR="$(pwd)"
 
+# Starting
+# echo "# Before you start"
+# echo "Please make sure you have upgraded your Fedora after fresh install, it may have missing features if ran without updating (The fresh install may have outdated KDE Plasma)."
+# echo "Do you want to upgrade your system first and run [sudo dnf upgrade]? It would take several minutes."
+
+# options=("y" "Y" "n" "N")
+# PS3="[y/n]: "
+
+# select choice in "${options[@]}"
+# do
+#     case $choice in
+#         "y")
+#             sudo dnf upgrade
+#             echo "Finished updating. You may run this script again."
+#             exit 0
+#             ;;
+#         "Y")
+#             sudo dnf upgrade
+#             echo "Finished updating. You may run this script again."
+#             exit 0
+#             ;;
+#         "N")
+#             echo " "
+#             ;;
+#         "n")
+#             echo " "
+#             ;;
+#         *)
+#             echo "Invalid option."
+#             exit 0
+#             ;;
+#     esac
+# done
+
 # Installing Required Desktop Packages
 echo "# Installing Required Desktop Packages"
 sudo dnf install -y git stow kvantum
@@ -37,6 +71,8 @@ done
 echo "# Building Better Blur"
 mkdir -p ~/builds
 cd ~/builds
+
+sudo dnf -y install git cmake extra-cmake-modules gcc-g++ kf6-kwindowsystem-devel plasma-workspace-devel libplasma-devel qt6-qtbase-private-devel qt6-qtbase-devel cmake kwin-devel extra-cmake-modules kwin-devel kf6-knotifications-devel kf6-kio-devel kf6-kcrash-devel kf6-ki18n-devel kf6-kguiaddons-devel libepoxy-devel kf6-kglobalaccel-devel kf6-kcmutils-devel kf6-kconfigwidgets-devel kf6-kdeclarative-devel kdecoration-devel kf6-kglobalaccel kf6-kdeclarative libplasma kf6-kio qt6-qtbase kf6-kguiaddons kf6-ki18n wayland-devel libdrm-devel
 
 if [ ! -d "kwin-effects-forceblur" ]; then
     git clone https://github.com/taj-ny/kwin-effects-forceblur
