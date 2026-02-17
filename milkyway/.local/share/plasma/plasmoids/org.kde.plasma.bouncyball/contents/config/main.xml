@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <entry name="tickLength" type="Int">
+      <label>The length of the time interval ('tick') used by the physics simulation.</label>
+      <default>20</default>
+      <min>16</min>
+      <max>50</max>
+    </entry>
+    <entry name="gravity" type="Double">
+      <label>The gravity pulling down on the ball.</label>
+      <default>1.5</default>
+    </entry>
+    <entry name="friction" type="Double">
+      <label>The friction slowing the ball down.</label>
+      <default>0.03</default>
+    </entry>
+    <entry name="restitution" type="Double">
+      <label>How much bounce the ball responds with when colliding with the desktop edges.</label>
+      <default>0.8</default>
+    </entry>
+
+    <entry name="playSound" type="Bool">
+      <label>Whether to play a sound when colliding with a desktop edge.</label>
+      <default>false</default>
+    </entry>
+    <entry name="soundVolume" type="Double">
+      <label>The volume of the collision sound.</label>
+      <default>0.5</default>
+      <min>0.0</min>
+      <max>1.0</max>
+    </entry>
+    <entry name="maxConcurrentSounds" type="Int">
+      <label>The maximum number of collisions to sound at the same time.</label>
+      <default>2</default>
+      <min>1</min>
+      <max>5</max>
+    </entry>
+
+    <entry name="autoBounce" type="Bool">
+      <label>Whether to automatically pull on the ball to make it bounce.</label>
+      <default>false</default>
+    </entry>
+    <entry name="autoBounceStrength" type="Int">
+      <label>How strongly to pull on the ball when auto-bouncing.</label>
+      <default>50</default>
+      <min>0</min>
+      <max>100</max>
+    </entry>
+
+    <entry name="showHelpTexts" type="Bool">
+      <label>Whether to show help texts in the widget.</label>
+      <default>true</default>
+    </entry>
+</kcfg>

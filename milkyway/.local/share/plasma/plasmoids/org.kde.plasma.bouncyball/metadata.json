@@ -1,0 +1,25 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "hein@kde.org, filipfila.kde@gmail.com",
+                "Name": "Eike Hein, Filip Fila"
+            }
+        ],
+        "Category": "Fun and Games",
+        "Dependencies": [
+        ],
+        "Description": "A bouncy ball for Plasma 6",
+        "EnabledByDefault": true,
+        "Icon": "applications-games",
+        "Id": "org.kde.plasma.bouncyball",
+        "License": "GPL v2+",
+        "Name": "Bouncy Ball",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "3.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

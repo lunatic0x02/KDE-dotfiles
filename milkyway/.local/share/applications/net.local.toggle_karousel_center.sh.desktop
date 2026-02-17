@@ -1,6 +1,6 @@
 [Desktop Entry]
-Exec=/home/Lunatic/Scripts/toggle_karousel_topgap.sh
-Name=toggle_karousel_topgap
+Exec=/home/Lunatic/Scripts/toggle_karousel_center.sh
+Name=toggle_karousel_center
 NoDisplay=true
 StartupNotify=false
 Type=Application

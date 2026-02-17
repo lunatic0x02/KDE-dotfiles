@@ -1,2 +1,7 @@
+[Libinput][1267][12350][ELAN1200:00 04F3:303E Touchpad]
+DisableWhileTyping=false
+MiddleButtonEmulation=true
+NaturalScroll=true
+
 [Mouse]
 cursorTheme=Sweet-cursors

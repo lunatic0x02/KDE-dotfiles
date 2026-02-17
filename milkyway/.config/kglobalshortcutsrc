@@ -1,6 +1,7 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-9098a964-1869-4e4b-bde8-91555a86a107=none,none,Switch to activity "Default"
+switch-to-activity-ea1649b4-e9e1-4903-83a5-a90de644ef5f=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
@@ -84,6 +85,7 @@ KrohnkiteToggleFloat=Meta+F,none,Krohnkite: Toggle Float
 KrohnkiteTreeColumnLayout=none,none,Krohnkite: Three Column Layout
 KrohnkitegrowWidth=Meta+Ctrl+L,none,Krohnkite: Grow Width
 KrohnkitetoggleDock=none,none,Krohnkite: Toggle Dock
+MinimizeAll=Meta+Shift+D,none,MinimizeAll
 Move Tablet to Next Output=none,none,Move the tablet to the next output
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
@@ -257,13 +259,13 @@ karousel-column-move-to-desktop-7=Meta+Ctrl+Shift+F7,none,Karousel: Move column 
 karousel-column-move-to-desktop-8=Meta+Ctrl+Shift+F8,none,Karousel: Move column to desktop 8
 karousel-column-move-to-desktop-9=Meta+Ctrl+Shift+F9,none,Karousel: Move column to desktop 9
 karousel-column-toggle-stacked=Meta+X,none,Karousel: Toggle stacked layout for focused column
-karousel-column-width-decrease=none,none,Karousel: Decrease column width
-karousel-column-width-increase=none,none,Karousel: Increase column width
+karousel-column-width-decrease=Meta+Ctrl+-,none,Karousel: Decrease column width
+karousel-column-width-increase=Meta+Ctrl+=,none,Karousel: Increase column width
 karousel-columns-squeeze-left=none,none,Karousel: Squeeze left column onto the screen
 karousel-columns-squeeze-right=Meta+Ctrl+D,none,Karousel: Squeeze right column onto the screen
 karousel-columns-width-equalize=none,none,Karousel: Equalize widths of visible columns
-karousel-cycle-preset-widths=Meta+Ctrl+=,none,Karousel: Cycle through preset column widths
-karousel-cycle-preset-widths-reverse=Meta+Ctrl+-,none,Karousel: Cycle through preset column widths in reverse
+karousel-cycle-preset-widths=none,none,Karousel: Cycle through preset column widths
+karousel-cycle-preset-widths-reverse=none,none,Karousel: Cycle through preset column widths in reverse
 karousel-focus-1=none,none,Karousel: Move focus to column 1
 karousel-focus-10=none,none,Karousel: Move focus to column 10
 karousel-focus-11=none,none,Karousel: Move focus to column 11
@@ -283,7 +285,7 @@ karousel-focus-next=none,none,Karousel: Move focus to the next window in grid
 karousel-focus-previous=none,none,Karousel: Move focus to the previous window in grid
 karousel-focus-right=Shift+Right,none,Karousel: Move focus right
 karousel-focus-start=Meta+Home,none,Karousel: Move focus to start
-karousel-focus-up=Shift+Up,none,Karousel: Move focus up
+karousel-focus-up=none,none,Karousel: Move focus up
 karousel-grid-scroll-end=Meta+Alt+End,none,Karousel: Scroll to end
 karousel-grid-scroll-focused=Meta+Alt+Return,none,Karousel: Center focused window
 karousel-grid-scroll-left=Meta+Alt+PgUp,none,Karousel: Scroll left
@@ -390,6 +392,9 @@ toggle do not disturb=none,,Toggle do not disturb
 
 [services][net.local.toggle_karousel.sh.desktop]
 _launch=Meta+Shift+T
+
+[services][net.local.toggle_karousel_center.sh.desktop]
+_launch=Meta+Shift+C
 
 [services][net.local.toggle_karousel_topgap.sh.desktop]
 _launch=Meta+Shift+U
