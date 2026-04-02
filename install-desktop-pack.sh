@@ -43,7 +43,9 @@ sudo dnf install -y git stow kvantum
 
 echo "# Stowing Desktop Theme"
 THEME="milkyway"
-stow -R "$THEME"
+kquitapp6 plasmashell
+stow -R "$THEME" --adopt
+kstart plasmashell
 
 # Setting Kvantum Theme
 echo "# Setting Kvantum Theme"
