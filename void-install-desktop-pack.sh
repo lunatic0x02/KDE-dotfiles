@@ -42,7 +42,7 @@ cd ~/builds
 
 sudo xbps-install -y base-devel extra-cmake-modules qt6-base-devel qt6-declarative-devel kwin-devel kf6-kcolorscheme-devel kf6-kconfig-devel kf6-kconfigwidgets-devel kf6-kcoreaddons-devel kf6-ki18n-devel kf6-kcmutils-devel kf6-kwidgetsaddons-devel kf6-kwindowsystem-devel kf6-kdecoration-devel
 
-if [ ! -d "kwin-effects-forceblur" ]; then
+if [ ! -d "kwin-effects-better-blur-dx" ]; then
     git clone https://github.com/xarblu/kwin-effects-better-blur-dx
 fi
 
